@@ -8,7 +8,7 @@ const SocketIO = require('socket.io');
      io.on('connection', (socket) => {
         const req = socket.request;
         const { headers: { referer } } = req;
-        const roomId = referer.spilt('/')[referer.spilt('/').length -1];
+        const roomId = referer.split('/')[referer.split('/').length -1];
         socket.join(roomId);
         socket.on('disconnect', () => {
             socket.leave(roomId);

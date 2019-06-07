@@ -8,8 +8,8 @@
 <body>
     <div id="container">
         <div class="wrapper" id="profile">
-            <div>Hello! Ronaldo</div>
-            <div>Deposit: 100000 won</div>
+            <div>Hello! <b><%=user.dataValues.nickname%></b></div>
+            <div>Deposit: <%=user.dataValues.money%> won</div>
             <a id="register-btn" class="btn" href="/">뒤로 가기</a>
         </div>
 
@@ -17,26 +17,17 @@
             <div id="nav">내 낙찰 목록</div>
             <table id="table">
                 <tr>
-                    <th>Product</th>
-                    <th>Image</th>
-                    <th>Successful Bid Price</th>
+                    <th>상품명</th>
+                    <th>이미지</th>
+                    <th>낙찰가</th>
                 </tr>
-                <tr>
-                    <td>Dummy Item</td>
-                    <td><img class="img" src="/uploads/test1.png"/></td>
-                    <td>50000</td>
-                </tr>
-                <tr>
-                    <td>Dummy Item</td>
-                    <td><img class="img" src="/uploads/test2.png"/></td>
-                    <td>50000</td>
-
-                <tr>
-                    <td>Dummy Item</td>
-                    <td><img class="img" src="/uploads/test3.png"/></td>
-                    <td>50000</td>
-                </tr>
-                </tr>
+                <% for (good of goods) { %>
+                    <tr>
+                        <td class="good-name"><%=good.dataValues.name%></td>
+                        <td class="img-wrapper"><img class="img" src="/uploads/<%=good.dataValues.img%>"/></td>
+                        <td><%=good.dataValues.price%></td>
+                    </tr>
+                <% } %>
             </table>
         </div>
     </div>

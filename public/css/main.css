@@ -16,7 +16,7 @@ html, body {
 }
 
 .wrapper {
-    background: rgb(13, 0, 44);;
+    background: rgb(13, 0, 44);
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -167,4 +167,13 @@ img {
 
 .time-container {
     width: 15%;
+}
+
+th {
+    background: white;
+    color: rgb(13, 0, 44);
+}
+
+th, td {
+    text-align: center
 }

@@ -8,6 +8,7 @@ const flash = require('connect-flash');
 const { sequelize } = require('./models');
 const sse = require('./sse');
 const webSocket = require('./socket');
+const checkAuction = require('./checkAuction');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.set('port', process.env.PORT || 9005);
 sequelize.sync();
 const passportConfig = require('./passport');
 passportConfig(passport);
+checkAuction();
 
 
 // Middlewares

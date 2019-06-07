@@ -17,9 +17,9 @@
         <div class="wrapper" id="form">
             <div id="left" class="money-wrapper">
                 <div class="price-title">현재 잔액</div>
-                <div class="price-value">1000000</div>
+                <div class="price-value"><%=user.dataValues.money%></div>
             </div>
-            <form id="money-form" action="/money_process" method='post'>
+            <form id="money-form" action="/charge_money_process" method='post'>
                 <input id="new-price" class="input" name="money" type="number" placeholder="충전 금액"/>
                 <button id="register-btn">충천</button>
                 <a href="/" id="cancel-btn">취소</a>

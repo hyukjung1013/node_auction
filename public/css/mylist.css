@@ -106,3 +106,15 @@ button {
 a {
     text-decoration: none;
 }
+
+.img-wrapper {
+    width: 50%;
+}
+
+.good-name {
+    width: 25%;
+}
+
+th, td {
+    text-align: center;
+}
