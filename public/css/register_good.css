@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(240, 240, 240);
+}
+
+#container {
+    margin: auto;
+    width: 600px;
+    padding: 10px;
+}
+
+.wrapper {
+    background: rgb(13, 0, 44);;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    overflow: auto
+}
+
+#nav {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#form {
+    padding: 20px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+#register-btn {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    padding: 7px 0px 7px 0px;
+    background: rgb(255, 0, 98);
+    color: rgb(13, 0, 44);
+    font-size: 15px;
+}
+
+#cancel-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    padding: 7px 0px 7px 0px;
+    background: rgb(13, 0, 44);
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#file-btn {
+    margin: 5px 0px 5px 0px;
+}
+
+a {
+    text-decoration: none;
+}

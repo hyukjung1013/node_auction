@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(240, 240, 240);
+}
+
+#container {
+    margin: auto;
+    width: 600px;
+    padding: 10px;
+}
+
+.wrapper {
+    background: rgb(13, 0, 44);;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    overflow: auto
+}
+
+#profile {
+    padding: 20px;
+}
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgb(255, 0, 98);
+    color: rgb(13, 0, 44);
+    font-size: 15px;
+}
+
+#logout-btn {
+    display: inline-block;
+}
+
+#register-btn {
+    display: inline-block;
+}
+
+.bid-wrapper {
+    padding: 10px;
+}
+
+.input {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+#price {
+    width: 20%;
+}
+
+#comment {
+    width: 70%;
+}
+
+#user {
+    display: inline-block;
+    font-weight: bolder;
+}
+
+#dollar {
+    display: inline-block;
+
+}
+
+#message {
+    display: inline-block;
+}
+
+#bid-info {
+    padding: 5px;
+}
+
+#product{
+    padding: 20px;
+}
+
+#img {
+    margin-top:15px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+table, th, td {
+    border: 1px solid rgb(245, 243, 243);
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 8px 5px 5px 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-size:17px;
+    width: 30%;
+    font-weight: bolder;
+}
+
+td {
+    font-weight: none;
+}
+
+a {
+    text-decoration: none;
+}

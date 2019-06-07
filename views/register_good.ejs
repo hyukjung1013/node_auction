@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="stylesheet" href="/css/register_good.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#file-btn").on('change', function(){
+                readURL(this);
+            });
+        });
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                    $('#img-content').attr('src', e.target.result);
+                }
+              reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div class="wrapper" id="nav">
+            상품등록
+        </div>
+        <div class="wrapper" id="form">
+            <form action="/good" method='post' enctype="multipart/form-data">
+                <input class="input" name="name" type="text" placeholder="Product Name" required autofocus/>
+                <input class="input" name="price" type="number" placeholder="Starting Price"/>
+                <input id="file-btn" name="img" type="file" />
+                <img id="img-content" class="img" src="" required/>
+                <button id="register-btn">등록</button>
+                <a href="/" id="cancel-btn">취소</a>
+            </form>
+        </div>
+    </div>
+</body>

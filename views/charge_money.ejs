@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link rel="stylesheet" href="/css/charge_money.css"/>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="wrapper" id="nav">
+            요금 충전
+        </div>
+        <div class="wrapper" id="form">
+            <div id="left" class="money-wrapper">
+                <div class="price-title">현재 잔액</div>
+                <div class="price-value">1000000</div>
+            </div>
+            <form id="money-form" action="/money_process" method='post'>
+                <input id="new-price" class="input" name="money" type="number" placeholder="충전 금액"/>
+                <button id="register-btn">충천</button>
+                <a href="/" id="cancel-btn">취소</a>
+            </form>
+        </div>
+    </div>
+
+</body>
