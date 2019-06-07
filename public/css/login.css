@@ -73,3 +73,11 @@ a {
     margin-bottom: 5px;
     color: rgb(255, 0, 98);
 }
+
+#msg {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(105, 247, 169);
+}

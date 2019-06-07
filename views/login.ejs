@@ -11,6 +11,7 @@
             Log in
         </div>
         <div class="wrapper" id="form">
+            <div id="msg"><%=msg%></div>
             <form action="/auth/login_process" method="post">
                 <input class="input" name="email" type="email" placeholder="email"/>
                 <input class="input" name="password" type="password" placeholder="password"/>

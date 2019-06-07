@@ -8,9 +8,9 @@
 <body>
     <div id="container">
         <div class="wrapper" id="profile">
-            <div>Hello! Ronaldo</div>
+            <div>Hello! <b><%=user.dataValues.nickname%></b></div>
             <div>Deposit: 4000000won</div>
-            <a id="logout-btn" class="btn">로그아웃</a>
+            <a id="logout-btn" href="/auth/logout" class="btn">로그아웃</a>
             <a id="logout-btn" href="/charge_money" class="btn">잔액 충전</a>
             <a id="register-btn" href="/register_good" class="btn">상품 등록</a>
             <a id="register-btn" href="/mylist" class="btn">내 낙찰 목록</a>
