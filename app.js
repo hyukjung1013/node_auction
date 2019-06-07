@@ -6,6 +6,9 @@ const passport = require('passport');
 const session = require('express-session');
 const flash = require('connect-flash');
 const { sequelize } = require('./models');
+const sse = require('./sse');
+const webSocket = require('./socket');
+
 const app = express();
 
 
@@ -57,6 +60,9 @@ app.use((err, req, res, next) => {
     res.render('error');
 });
 
-app.listen(app.get('port'), () => {
+const server = app.listen(app.get('port'), () => {
     console.log(app.get('port'), ' Listening....');
 });
+
+webSocket(server, app);
+sse(server);

@@ -42,7 +42,7 @@ html, body {
     display: inline-block;
 }
 
-#register-btn {
+#home-btn {
     display: inline-block;
 }
 
@@ -67,17 +67,17 @@ html, body {
     width: 70%;
 }
 
-#user {
+.user {
     display: inline-block;
     font-weight: bolder;
 }
 
-#dollar {
+.dollar {
     display: inline-block;
 
 }
 
-#message {
+.message {
     display: inline-block;
 }
 
@@ -96,9 +96,6 @@ html, body {
     border-radius: 5px;
 }
 
-table {
-    width: 100%;
-}
 
 table, th, td {
     border: 1px solid rgb(245, 243, 243);
@@ -107,15 +104,21 @@ table, th, td {
 }
 
 th, td {
-    padding: 5px 5px 0px 5px;
+    padding: 8px 5px 5px 10px;
 }
 
 table {
     width: 100%;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 th {
     font-size:17px;
+    width: 30%;
     font-weight: bolder;
 }
 
@@ -123,48 +126,20 @@ td {
     font-weight: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-.enter-btn {
-    display: block;
-    margin: auto;
-    color: rgb(255, 0, 98);
+#title {
     text-align: center;
+    font-size: 60px;
     font-weight: bold;
-    padding: none;
+    padding: 10px;
 }
 
-.enter-btn-wrapper {
-    padding: none;
+#time {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.time {
-    width: 100%
-}
-.time-container {
-    width: 400px;
-}
-
-
-.good_name {
-    width: 25%;
-}
-
-.img {
-    width: 25%;
-}
-
-.good_price {
-    width: 15%;
-}
-
-.time-container {
-    width: 15%;
+#time-value {
+    height: 60px;
 }

@@ -78,4 +78,20 @@ router.get('/mylist', (req, res) => {
     res.render('mylist');
 });
 
+router.get('/good/:id', async(req, res, next) => {
+    Good.findOne({
+        where: { id: req.params.id }
+    })
+    .then((good) => {
+        res.render('room', {
+            good: good,
+            nickname: req.user.dataValues.nickname
+        });
+    })
+    .catch(err => {
+        console.error(err);
+        next(err);
+    });
+});
+
 module.exports = router;
