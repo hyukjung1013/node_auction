@@ -18,24 +18,16 @@
 
         <div class="wrapper" id="product">
             <table id="table">
-                <tr>
-                    <th>PRODUCT</th>
-                    <td>RONALDO SIGNATURE</td>
-                </tr>
-                <tr>
-                    <th>AUTHOR</th>
-                    <td>RONALDO SIGNATURE</td>
-                </tr>
-                <tr>
-                    <th>STARTING PRICE</th>
-                    <td>RONALDO SIGNATURE</td>
-                </tr>
-                <tr>
-                    <th>REMAINING TIME</th>
-                    <td>RONALDO SIGNATURE</td>
-                </tr>
+                <% for (good of goods) { %>
+                    <tr>
+                        <td><%=good.dataValues.name%></td>
+                        <td><img class="img" src="/uploads/<%=good.dataValues.img%>"/></td>
+                        <td><%=good.dataValues.price%></td>
+                        <td>10:10:10</td>
+                        <td class="enter-btn-wrapper"><a class="enter-btn" href="/good/<%=good.dataValues.id%>">Enter</a></td>
+                    </tr>
+                <% } %>
             </table>
-            <img id="img" src="/uploads/test1.png"/>
         </div>
 
         <div class="wrapper" id="bid">

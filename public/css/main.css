@@ -96,6 +96,9 @@ html, body {
     border-radius: 5px;
 }
 
+table {
+    width: 100%;
+}
 
 table, th, td {
     border: 1px solid rgb(245, 243, 243);
@@ -104,7 +107,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 8px 5px 5px 10px;
+    padding: 5px 5px 0px 5px;
 }
 
 table {
@@ -123,4 +126,22 @@ td {
 
 a {
     text-decoration: none;
+}
+
+.enter-btn {
+    display: block;
+    margin: auto;
+    color: rgb(255, 0, 98);
+    text-align: center;
+    font-weight: bold;
+    padding: none;
+}
+
+.enter-btn-wrapper {
+    padding: none;
+}
+
+.img {
+    width: 100%;
+    border-radius: 5px;
 }

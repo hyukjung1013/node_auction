@@ -11,5 +11,9 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 db.User = require('./user')(sequelize, Sequelize);
+db.Good = require('./good')(sequelize, Sequelize);
+
+db.Good.belongsTo(db.User, { as: 'owner' } );
+db.Good.belongsTo(db.User, { as: 'sold' } );
 
 module.exports = db;
